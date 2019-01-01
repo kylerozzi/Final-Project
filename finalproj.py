@@ -15,6 +15,15 @@ elif q1 == "Y":
         if q3 == "G":
             print("Although it’s heavy you are able to proceed further into the cave. At some point, you catch sight of a door being guarded by sleeping wolf. You can either decide to turn around and go back or quietly go past the dog through the door: Enter “T” for turn around and “Q” for quietly going past: ")
             
+            
+            
+
+        elif q3 == "S":
+            print("Sword at your side, you proceed further into the cave. At some point, you catch sight of a door being guarded by sleeping wolf. You can either decide to turn around and go back or quietly go past the dog through the door: Enter “T” for turn around and “Q” for quietly going past: ")
+            
+        else: 
+            pass
+            
     else:
         pass
 
