@@ -13,7 +13,16 @@ elif q1 == "Y":
     elif q2 == "Y":
         q3 = input("You pickup the lantern and continue walking further into the cave. At some point, you catch sight of a sword and a gold brick sitting next to one another on the ground. You can only take one because of the lantern. Enter “S” for sword and “G” for the gold brick: ")
         if q3 == "G":
-            print("Although it’s heavy you are able to proceed further into the cave. At some point, you catch sight of a door being guarded by sleeping wolf. You can either decide to turn around and go back or quietly go past the dog through the door: Enter “T” for turn around and “Q” for quietly going past: ")
+            q4 = input("Although it’s heavy you are able to proceed further into the cave. At some point, you catch sight of a door being guarded by sleeping wolf. You can either decide to turn around and go back or quietly go past the dog through the door: Enter “T” for turn around and “Q” for quietly going past: ")
+            if q4 == "T":
+                print("You are a coward: GAME OVER")
+            elif q4 == "Q":
+                q5 == input("You quietly sneak through the door without waking the wolf, but once you enter the new section of the cave, you are confronted by a massive figure. The figure bellows “Turn around or Die!” You can either attempt to bribe them with the gold brick or club them over the head with it: Enter “B” to bribe and “C” to club: ")
+                
+            
+            
+            else:
+                pass
             
             
             
