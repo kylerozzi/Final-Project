@@ -50,7 +50,7 @@ elif q1 == "Y":
             if q9 == "T":
                 print("You are a coward: GAME OVER")
             elif q9 == "Q":
-                q10 == input("You quietly sneak through the door without waking the wolf, but once you enter the new section of the cave, you are confronted by a massive figure. The figure bellows “Turn around or Die!” You can either attempt to bribe them with the sword or attack them with it: Enter “B” to bribe and “A” to attack: ")
+                q10 = input("You quietly sneak through the door without waking the wolf, but once you enter the new section of the cave, you are confronted by a massive figure. The figure bellows “Turn around or Die!” You can either attempt to bribe them with the sword or attack them with it: Enter “B” to bribe and “A” to attack: ")
                 if q10 == "A":
                     print("You attempt to attack the figure, but it is unsuccessful. The figure responds with “Ha-Ha, foolish traveler. I can only be defeated when clubbed with a gold brick, not a puny sword” The figure proceeds to kill you: Game Over")
                 elif q10 == "B":
