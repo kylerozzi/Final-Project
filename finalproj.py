@@ -18,8 +18,13 @@ elif q1 == "Y":
                 print("You are a coward: GAME OVER")
             elif q4 == "Q":
                 q5 == input("You quietly sneak through the door without waking the wolf, but once you enter the new section of the cave, you are confronted by a massive figure. The figure bellows “Turn around or Die!” You can either attempt to bribe them with the gold brick or club them over the head with it: Enter “B” to bribe and “C” to club: ")
-                if q5 == "B"
+                if q5 == "B":
                     print("You attempt to bribe the figure, and they respond with “Ha-Ha, foolish traveler. I only accepts bribes of swords. Not worthless gold bricks.” The figure proceeds to kill you: Game Over")
+                elif q5 == "C":
+                    q6 = input("You club the figure over the head and it works! You are free to continue through the cave. After a while, you reach the end of the cave. There are two rooms that you can enter. One of them is filled with treasure and the other has a puppy. Which do you choose: Enter “T” for the treasure room and “P” for the puppy room: ")
+                    
+                else:
+                    pass
                     
             
             
