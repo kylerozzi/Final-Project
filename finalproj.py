@@ -27,7 +27,9 @@ door: Enter “T” for turn around and “Q” for quietly going past: ")
             elif q4 == "Q":
                 q5 = input("You quietly sneak through the door without waking \
 the wolf, but once you enter the new section of the cave, you are confronted by \
-a massive figure. The figure bellows “Turn around or Die!” You can either attempt to bribe them with the gold brick or club them over the head with it: Enter “B” to bribe and “C” to club: ")
+a massive figure. The figure bellows “Turn around or Die!” You can either \
+attempt to bribe them with the gold brick or club them over the head with it: \
+Enter “B” to bribe and “C” to club: ")
                 if q5 == "B":
                     print("You attempt to bribe the figure, and they respond with \
 “Ha-Ha, foolish traveler. I only accepts bribes of swords. Not worthless gold \
@@ -100,7 +102,6 @@ your prerogative - Thank you for playing: The End")
                         elif q12 == "Y":
                             print("Fantastic decision. You take home the puppy and end \
 up with a great companion. A successful adventure, I’d say: The End")
-
                     elif q11 == "T":
                         q13 = input("You enter the room. Enter “Y” to take the treasure \
 and “N” to leave empty handed: ")
