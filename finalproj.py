@@ -1,6 +1,6 @@
 #Kyle Rozzi
 
-print("Hi there! Welcome to Adventure of the Cave! Make decisions to alter the game and end victorious!")
+print("Welcome to Adventure of the Cave! Make decisions to alter the game and end victorious!")
 
 q1 = input("You are walking through the forest and catch sight of a cave. Do you enter? Enter “Y” for yes and “N” for no: ")
 
