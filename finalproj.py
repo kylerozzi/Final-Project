@@ -1,8 +1,10 @@
 #Kyle Rozzi
 
-print("Welcome to Adventure of the Cave! Make decisions to alter the game and end victorious!")
+print("Welcome to Adventure of the Cave! Make decisions to alter the \
+game and end victorious!")
 
-q1 = input("You are walking through the forest and catch sight of a cave. Do you enter? Enter “Y” for yes and “N” for no: ")
+q1 = input("You are walking through the forest and catch sight of a \
+cave. Do you enter? Enter “Y” for yes and “N” for no: ")
 
 if q1 == "N":
     print("You lack a sense of adventure: GAME OVER")
