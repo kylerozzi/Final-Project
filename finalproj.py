@@ -1,4 +1,6 @@
 #Kyle Rozzi
+#Computer Programming Final Project
+#Adventure of the Cave
 
 print("Welcome to Adventure of the Cave! Make decisions to alter the \
 game and end victorious!")
