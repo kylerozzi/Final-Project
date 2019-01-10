@@ -11,8 +11,11 @@ q1 = input("You are walking through the forest and catch sight of a \
 cave. Do you enter? Enter “Y” for yes and “N” for no: ")
 
 if q1 == "N":
+    
     print("You lack a sense of adventure: GAME OVER")
+    
 elif q1 == "Y": 
+    
     rps = input("Immediately, you confront a massive creature. It announces that 'You \
 may only pass if you best me in a game of rock paper scissors. What \
 do you chose': Enter R for Rock, P for paper and S for Scissors: ")
