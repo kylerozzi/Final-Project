@@ -14,8 +14,8 @@ if q1 == "N":
     
     print("You lack a sense of adventure: GAME OVER")
     
-elif q1 == "Y": 
     
+elif q1 == "Y": 
     rps = input("Immediately, you confront a massive creature. It announces that 'You \
 may only pass if you best me in a game of rock paper scissors. What \
 do you chose': Enter R for Rock, P for paper and S for Scissors: ")
@@ -27,31 +27,41 @@ do you chose': Enter R for Rock, P for paper and S for Scissors: ")
     elif rps == 'P':
         win = 'Rock'
 
-
     if boss == 2:
         if rps == 'R':
             print("The creature chooses paper and proceeds to crush your \
+            
+            
 puny head: GAME OVER")
         elif rps == 'P':
             print("The creature chooses scissors and proceeds to crush your \
+            
+            
 puny head: GAME OVER")
         elif rps == 'S':
             print("The creature chooses rock and proceeds to crush your puny \
 head: GAME OVER")
+
 
     elif boss == 1:
         if rps == 'R':
             print("The creature chooses rock as well and announcse that 'A Tie \
 won't save you'.\
 He proceeds to crush your puny head: GAME OVER")
+
+
         elif rps == 'P':
             print("The creature chooses paper as well and announcse that 'A Tie \
+            
+            
 won't save you'.\
 He proceeds to crush your puny head: GAME OVER")
         elif rps == 'S':
             print("The creature chooses rock as well and announcse that 'A Tie \
 won't save you'.\
 He proceeds to crush your puny head: GAME OVER")
+
+
     elif boss == 0:
         print('The creature chooses',win,'and you win!')
         q3 = (input('After proceeding through the cave for some time you \
@@ -65,6 +75,8 @@ turn around and go back or quietly sneak past the wolf \
 : Enter “T” for turn around and “Q” for quietly going past: ")
             if q4 == "T":
                 print("You are a coward: GAME OVER")
+                
+                
             elif q4 == "Q":
                 q5 = input("You quietly sneak past, but are immediately confronted \
 by a massive figure. The figure bellows “Turn \
@@ -74,6 +86,8 @@ gold or club them over with head with it: Enter “B” to bribe and “A” to 
                     print("You attempt to bribe the figure, and they respond with \
 “Ha-Ha, foolish traveler. I only accepts bribes of swords. Not worthless gold \
 bricks.” The figure proceeds to kill you: Game Over")
+
+
                 elif q5 == "C":
                     q6 = input("You club the figure over the head and it works! \
 After a while, you reach the end of \
@@ -86,9 +100,12 @@ puppy home and “N” to leave empty handed: ")
                         if q7 == "N":
                             print("You want to end your adventure empty handed? \
 Well, it's your prerogative - Thank you for playing: The End")
+
+
                         elif q7 == "Y":
                             print("Fantastic decision. You take home the puppy \
 and end up with a great companion. A successful adventure, I’d say: The End")
+
 
                     elif q6 == "T":
                         q8 = input("You enter the room. Enter “Y” to take the treasure and \
@@ -96,6 +113,8 @@ and end up with a great companion. A successful adventure, I’d say: The End")
                         if q8 == "N":
                             print("You want to end your adventure empty handed? Well, \
 it's your prerogative - Thank you for playing: The End")
+
+
                         elif q8 == "Y":
                             print("Fantastic decision. You take home the treasure and \
 find yourself incredibly rich. A successful adventure, I’d say: The End")
@@ -116,6 +135,8 @@ turn around and go back or quietly sneak past the wolf \
 : Enter “T” for turn around and “Q” for quietly going past: ")
             if q9 == "T":
                 print("You are a coward: GAME OVER")
+                
+                
             elif q9 == "Q":
                 q10 = input("You quietly sneak past, but are immediately confronted \
 by a massive figure. The figure bellows “Turn \
@@ -126,6 +147,8 @@ sword or attack them with it: Enter “B” to bribe and “A” to attack: ")
 unsuccessful. The figure responds with “Ha-Ha, foolish traveler. \
 I can only be defeated when clubbed with a gold brick, not a puny sword” \
 The figure proceeds to kill you: Game Over")
+
+
                 elif q10 == "B":
                     q11 = input("You attempt to bribe the figure with the sword and it \
 works! After a while, you \
@@ -138,15 +161,21 @@ and “N” to leave empty handed: ")
                         if q12 == "N":
                             print("You want to end your adventure empty handed? Well, it's \
 your prerogative - Thank you for playing: The End")
+
+
                         elif q12 == "Y":
                             print("Fantastic decision. You take home the puppy and end \
 up with a great companion. A successful adventure, I’d say: The End")
+
+
                     elif q11 == "T":
                         q13 = input("You enter the room. Enter “Y” to take the treasure \
 and “N” to leave empty handed: ")
                         if q13 == "N":
                             print("You want to end your adventure empty handed? Well, \
 it's your prerogative - Thank you for playing: The End")
+
+
                         elif q13 == "Y":
                             print("Fantastic decision. You take home the treasure and \
 find yourself incredibly rich. A successful adventure, I’d say: The End")
