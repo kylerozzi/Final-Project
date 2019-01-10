@@ -50,7 +50,8 @@ He proceeds to crush your puny head: GAME OVER")
 won't save you'.\
 He proceeds to crush your puny head: GAME OVER")
     elif boss == 0:
-        q3 = (input('You win! After proceeding through the cave for some time you \
+        print('The creature chooses',win,'and you win!')
+        q3 = (input('After proceeding through the cave for some time you \
 catch sight of a sword and a gold brick. \
 You can only take one. Enter “S” for sword \
 and “G” for the gold brick: '))
