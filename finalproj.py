@@ -1,6 +1,8 @@
 #Kyle Rozzi
 #Computer Programming Final Project
 #Adventure of the Cave
+from random import randint
+boss = randint(0,2)
 
 print("Welcome to Adventure of the Cave! Make decisions to alter the \
 game and end victorious!")
@@ -11,36 +13,66 @@ cave. Do you enter? Enter “Y” for yes and “N” for no: ")
 if q1 == "N":
     print("You lack a sense of adventure: GAME OVER")
 elif q1 == "Y": 
-    q2 = input("In the cave there is a lantern. Do you pick it up?  Enter \
-“Y” for yes and “N” for no: ")
-    if q2 == "N":
-        print("You’re in a dark cave and you don’t pick up a lantern - \
-smart move: GAME OVER")
-    elif q2 == "Y":
-        q3 = input("You pickup the lantern and continue walking. \
-At some point, you catch sight of a sword and a gold brick sitting next \
-to one another on the ground. You can only take one. Enter “S” for sword \
-and “G” for the gold brick: ")
+    rps = input("Immediately, you confront a massive creature. It announces that 'You \
+may only pass if you best me in a game of rock paper scissors. What \
+do you chose': Enter R for Rock, P for paper and S for Scissors: ")
+
+    if rps == 'R':
+        win = 'Scissors'
+    elif rps == 'S':
+        win = 'Paper'
+    elif rps == 'P':
+        win = 'Rock'
+
+
+    if boss == 2:
+        if rps == 'R':
+            print("The creature chooses paper and proceeds to crush your \
+puny head: GAME OVER")
+        elif rps == 'P':
+            print("The creature chooses scissors and proceeds to crush your \
+puny head: GAME OVER")
+        elif rps == 'S':
+            print("The creature chooses rock and proceeds to crush your puny \
+head: GAME OVER")
+
+    elif boss == 1:
+        if rps == 'R':
+            print("The creature chooses rock as well and announcse that 'A Tie \
+won't save you'.\
+He proceeds to crush your puny head: GAME OVER")
+        elif rps == 'P':
+            print("The creature chooses paper as well and announcse that 'A Tie \
+won't save you'.\
+He proceeds to crush your puny head: GAME OVER")
+        elif rps == 'S':
+            print("The creature chooses rock as well and announcse that 'A Tie \
+won't save you'.\
+He proceeds to crush your puny head: GAME OVER")
+    elif boss == 0:
+        q3 = (input('You win! After proceeding through the cave for some time you \
+catch sight of a sword and a gold brick. \
+You can only take one. Enter “S” for sword \
+and “G” for the gold brick: '))
         if q3 == "G":
-            q4 = input("You proceed further into the cave. At some point, \
-you catch sight of a door being guarded by sleeping wolf. You can either \
-decide to turn around and go back or quietly go past the wolf through the \
-door: Enter “T” for turn around and “Q” for quietly going past: ")
+            q4 = input("You proceed further into the cave. You come across \
+a door being guarded by sleeping wolf. You can either \
+turn around and go back or quietly sneak past the wolf \
+: Enter “T” for turn around and “Q” for quietly going past: ")
             if q4 == "T":
                 print("You are a coward: GAME OVER")
             elif q4 == "Q":
-                q5 = input("You quietly sneak through the door without waking \
-the wolf, but once you enter the new section of the cave, you are confronted by \
-a massive figure. The figure bellows “Turn around or Die!” You can either \
-attempt to bribe them with the gold brick or club them over the head with it: \
-Enter “B” to bribe and “C” to club: ")
+                q5 = input("You quietly sneak past, but are immediately confronted \
+by a massive figure. The figure bellows “Turn \
+around or Die!” You can either attempt to bribe them with the \
+gold or club them over with head with it: Enter “B” to bribe and “A” to attack: ")
                 if q5 == "B":
                     print("You attempt to bribe the figure, and they respond with \
 “Ha-Ha, foolish traveler. I only accepts bribes of swords. Not worthless gold \
 bricks.” The figure proceeds to kill you: Game Over")
                 elif q5 == "C":
                     q6 = input("You club the figure over the head and it works! \
-You are free to continue through the cave. After a while, you reach the end of \
+After a while, you reach the end of \
 the cave. There are two rooms that you can enter. One of them is filled with \
 treasure and the other has a puppy. Which do you choose: Enter “T” for the \
 treasure room and “P” for the puppy room: ")
@@ -74,16 +106,15 @@ find yourself incredibly rich. A successful adventure, I’d say: The End")
             
 
         elif q3 == "S":
-            q9 = input("Sword at your side, you proceed further into the cave. \
-At some point, you catch sight of a door being guarded by sleeping wolf. \
-You can either decide to turn around and go back or quietly go past the \
-wolf through the door: Enter “T” for turn around and “Q” for quietly going past: ")
+            q9 = input("You proceed further into the cave. You come across \
+a door being guarded by sleeping wolf. You can either \
+turn around and go back or quietly sneak past the wolf \
+: Enter “T” for turn around and “Q” for quietly going past: ")
             if q9 == "T":
                 print("You are a coward: GAME OVER")
             elif q9 == "Q":
-                q10 = input("You quietly sneak through the door without waking \
-the wolf, but once you enter the new section of the cave, you \
-are confronted by a massive figure. The figure bellows “Turn \
+                q10 = input("You quietly sneak past, but are immediately confronted \
+by a massive figure. The figure bellows “Turn \
 around or Die!” You can either attempt to bribe them with the \
 sword or attack them with it: Enter “B” to bribe and “A” to attack: ")
                 if q10 == "A":
@@ -93,7 +124,7 @@ I can only be defeated when clubbed with a gold brick, not a puny sword” \
 The figure proceeds to kill you: Game Over")
                 elif q10 == "B":
                     q11 = input("You attempt to bribe the figure with the sword and it \
-works! You are free to continue through the cave. After a while, you \
+works! After a while, you \
 reach the end of the cave. There are two rooms that you can enter. \
 One of them is filled with treasure and the other has a puppy. Which \
 do you choose: Enter “T” for the treasure room and “P” for the puppy room: ")
